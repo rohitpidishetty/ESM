@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="shortcut icon"
+      href='{% static "ESM.png"%}'
+      type="image/x-icon"
+    />
+    <title>Link Unavailable</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+    #bad-req {
+      font-weight: bolder;
+      font-size: 5.2rem;
+      margin-top: 5%;
+    }
+    p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+  </style>
+  <body>
+    <center>
+      <p id="bad-req">Unavailable</p>
+      <span class="material-symbols-outlined" style="font-size: 10.3rem">
+        link_off
+      </span>
+      <p>Request could not be processed!</p>
+      <p>
+        The span of this generated link as been ended, please generate another
+        link.<br />Make sure to accept the request in 5 minutes from the
+        generation of the link.
+      </p>
+    </center>
+  </body>
+</html>
